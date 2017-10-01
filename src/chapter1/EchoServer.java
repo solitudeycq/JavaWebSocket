@@ -17,6 +17,7 @@ import javax.websocket.server.ServerEndpoint;
 public class EchoServer {
 	@OnMessage
 	public String echo(String incomingMessage) {
+		System.out.println(incomingMessage);
 		return "I got this ("+incomingMessage+")"+" so I am sending it back.";
 	}
 }
