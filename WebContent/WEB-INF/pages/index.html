@@ -9,7 +9,8 @@
 		output = document.getElementById("output");
 	}
 	function send_echo() {
-		var wsUri = "ws://localhost:8080/JavaWebSocket/echo";
+		//var wsUri = "ws://localhost:8080/JavaWebSocket/echo";
+		var wsUri = "ws://localhost:8080/JavaWebSocket/programmaticecho"; 
 		writeToScreen("Connecting to " + wsUri);
 		echo_websocket = new WebSocket(wsUri);
 		echo_websocket.onopen = function(evt) {
